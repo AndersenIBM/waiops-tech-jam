@@ -40,12 +40,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/IBM/waiops-tech-jam/tree/main",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/IBM/waiops-tech-jam/tree/main",
-        },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -103,24 +98,13 @@ const config: Config = {
           position: "left",
           activeBaseRegex: "best-practice/",
         },
-        {
-          to: "/labs/jam-in-a-box",
-          label: "Labs",
-          position: "left",
-          activeBaseRegex: "labs/",
-        },
-        {to: "/blog", label: "Blog", position: "left"},
-        // TODO: Automations coming soon
-        // {
-        //   to: "/automations",
-        //   label: "Automations",
-        //   position: "left",
-        // },
-        // {
-        //   href: "https://github.com/IBM/waiops-tech-jam",
-        //   label: "GitHub",
-        //   position: "right",
-        // },
+{
+  to: "/labs/cloud-pak-aiops",
+  label: "Labs",
+  position: "left",
+  activeBaseRegex: "labs/",
+},
+      
         {
           type: "search",
           position: "right",
@@ -163,10 +147,6 @@ const config: Config = {
         {
           title: "More",
           items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
             {
               label: "GitHub",
               href: "https://github.com/IBM/waiops-tech-jam",

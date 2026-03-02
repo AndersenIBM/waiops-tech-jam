@@ -30,13 +30,6 @@ function HomepageHeader() {
             link="/labs/jam-in-a-box"
             linkText="Start Lab"
           />
-          <FeatureCard
-            icon={<BlogIcon />}
-            title="Expert Insights Blog"
-            description="Stay updated with the latest technical insights from the IBM IT & Network Automation Tiger Team."
-            link="/blog"
-            linkText="Read Blog"
-          />
         </div>
       </div>
     </header>
